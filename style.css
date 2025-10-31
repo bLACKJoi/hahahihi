@@ -1,0 +1,62 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+html,body{background:#f5f7fa;color:#333;scroll-behavior:smooth;scroll-padding-top:90px}
+
+.glow-nav{display:flex;justify-content:center;align-items:center;padding:10px 0;position:fixed;top:0;left:0;width:100%;z-index:1000;backdrop-filter:blur(10px);background:rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.1)}
+.glow-nav ul{display:flex;gap:18px}
+.glow-nav ul li{list-style:none;width:50px;height:50px;background:#fff;box-shadow:0 6px 15px rgba(0,0,0,.1);border-radius:50px;cursor:pointer;display:flex;justify-content:center;align-items:center;position:relative;transition:.4s}
+.glow-nav ul li::before,.glow-nav ul li::after{content:"";position:absolute;inset:0;border-radius:50px;background:linear-gradient(45deg,var(--i),var(--j));transition:.4s;opacity:0}
+.glow-nav ul li::after{top:6px;filter:blur(12px);z-index:-1}
+.glow-nav ul li:hover{width:140px;box-shadow:none}
+.glow-nav ul li:hover::before{opacity:1}
+.glow-nav ul li:hover::after{opacity:.5}
+.glow-nav ul li ion-icon{color:#777;font-size:1.4em;transition:.4s .25s}
+.glow-nav ul li:hover ion-icon{transform:scale(0);color:#fff;transition-delay:0}
+.glow-nav ul li .title{position:absolute;color:#fff;font-size:.9em;letter-spacing:.05em;text-transform:uppercase;transform:scale(0);transition:.4s}
+.glow-nav ul li:hover .title{transform:scale(1);transition-delay:.25s}
+.glow-nav ul li .title a{color:#fff;text-decoration:none;padding:100px}
+
+section{padding:80px 100px;text-align:center}
+#home{background:linear-gradient(44deg,#246655,#28c37f,teal,turquoise);background-size:800% 800%;color:#fff;padding:150px 50px;border-bottom:2px solid #222;animation:hom 15s ease infinite;scroll-margin-top:80px;min-height:100vh;display:flex;flex-direction:column;justify-content:center}
+#home h2{font-size:42px;margin-bottom:10px}
+#home p{font-size:18px;opacity:.9}
+.huhu {display: flex;gap: 5px;}
+
+.carousel{margin:100px auto;width:100vh;display:flex;border-inline:2px solid #000;overflow-x:auto;gap:1em;scrollbar-width:none}
+.carousel::-webkit-scrollbar{display:none}
+.group{display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.1);gap:1em;margin-right:-1em;animation:spin 4s linear infinite}
+.card-c{flex:0 0 8em;height:15em;padding:1em;text-align:center;border-radius:.2em}
+.card-c img{border:2px solid #000;filter:blur(4px);transition:.3s}
+.card-c:hover img{filter:blur(0)}
+
+.profile-card{width:180px;height:230px;margin:1.5rem auto;perspective:1000px;cursor:pointer}
+.profile-card-inner{width:100%;height:100%;position:relative;transition:transform .6s;transform-style:preserve-3d}
+.profile-card:hover .profile-card-inner{transform:rotateY(180deg)}
+.profile-card-front,.profile-card-back{position:absolute;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:.6rem;overflow:hidden;backface-visibility:hidden;box-shadow:0 4px 10px rgba(0,0,0,.15)}
+.profile-card-front{background:#fff;border:1px solid #e5e7eb;padding:10px}
+.profile-card-front img{width:120px;height:120px;border-radius:30px 30px 50px 50px;border:3px solid red;margin-bottom:8px;object-fit:cover}
+.profile-card-front h3{font-size:14px}
+.profile-card-front p{font-size:12px;text-align:center;opacity:.8}
+.profile-card-back{background:linear-gradient(135deg,LightSlateGray,SpringGreen);color:#fff;transform:rotateY(180deg);padding:15px;font-size:13px;text-align:center}
+
+.ig-link{margin-top:12px;display:flex;justify-content:center}
+.ig-link a{width:120px;height:50px;color:#fff;background:#111;cursor:pointer;border-radius:10px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:bold;text-decoration:none;font-size:14px;position:relative;z-index:0}
+.ig-link a::before{content:"";position:absolute;top:-2px;left:-2px;width:calc(100% + 4px);height:calc(100% + 4px);border-radius:10px;background:linear-gradient(45deg,#f00,#f70,#ff0,#4f0,#0fd,#02f,#70f,#f0c,#f00);background-size:400%;filter:blur(5px);opacity:0;transition:.3s;animation:glowing 20s linear infinite;z-index:-1}
+.ig-link a:hover::before{opacity:1}
+.ig-link a::after{content:"";position:absolute;inset:0;background:#111;border-radius:10px;z-index:-1}
+.ig-link img{width:18px;height:18px}
+
+.conta { border: 1px solid black; border-radius: 0.5em; width: 20em; height: 20em; box-shadow: -2px 2px 2px 2px yellow; transform: skew(10deg); -webkit-transform: skew(10deg); -moz-transform: skew(10deg); -ms-transform: skew(10deg); -o-transform: skew(10deg); }
+.elsels { transform:skew(10deg) ; -webkit-transform:skew(10deg) ; -moz-transform:skew(10deg) ; -ms-transform:skew(10deg) ; -o-transform:skew(10deg) ; }
+.conta:hover, .elsels:hover { transform:skew(0deg) ; -webkit-transform:skew(0deg) ; -moz-transform:skew(0deg) ; -ms-transform:skew(0deg) ; -o-transform:skew(0deg) ; } 
+.conta, .elsels { transition:transform 250ms ease-in-out ; -webkit-transition:transform 250ms ease-in-out ; -moz-transition:transform 250ms ease-in-out ; -ms-transition:transform 250ms ease-in-out ; -o-transition:transform 250ms ease-in-out ; }
+.huhu {margin-left: 70px;}
+ul li, ol li {margin-bottom: 5px;list-style-position: inside;}
+
+footer{background:#222;color:#fff;text-align:center;padding:15px;margin-top:50px}
+
+@media(max-width:767px){.navigation{flex-direction:column}}
+@media(min-width:768px){.sidebar{width:25%}}
+
+@keyframes hom{0%{background-position:0 97%}50%{background-position:100% 4%}100%{background-position:0 97%}}
+@keyframes spin{from{translate:0}to{translate:-100%}}
+@keyframes glowing{0%{background-position:0 0}50%{background-position:400% 0}100%{background-position:0 0}}
