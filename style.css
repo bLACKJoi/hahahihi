@@ -21,7 +21,7 @@ section{padding:80px 100px;text-align:center}
 #home p{font-size:18px;opacity:.9}
 .huhu {display: flex;gap: 5px;}
 
-.carousel{margin:100px auto;width:100vh;display:flex;overflow-x:hidden;gap:1em;scrollbar-width:none;mask:linear-gradient(90deg,#0000,#000 10% 90%,#0000);}
+.carousel{margin-inline:auto;width:100vh;display:flex;overflow-x:hidden;gap:1em;scrollbar-width:none;mask: linear-gradient(90deg,#0000,#000 10% 90%,#0000);}
 .carousel::-webkit-scrollbar{display:none}
 .group{display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.1);gap:1em;margin-right:-1em;animation:spin 4s linear infinite}
 .card-c{flex:0 0 8em;height:15em;padding:1em;text-align:center;border-radius:.2em}
